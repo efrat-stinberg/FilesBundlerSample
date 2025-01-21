@@ -157,7 +157,7 @@ createRspCommand.SetHandler(async () =>
     string author = Console.ReadLine();
 
     // Create the full command line
-    string commandLine = $"fib bundle --language {language} --output {output} --note {note} --sort {sort} --remove-empty-lines {removeEmptyLines} --author \"{author}\"";
+    string commandLine = $"bundle\n --language \"{language}\"\n --output {output}\n --note {note}\n --sort {sort}\n --remove-empty-lines {removeEmptyLines}\n --author \"{author}\"";
 
     // Save the command to a response file
     string responseFileName = "responseFile.rsp";
@@ -165,6 +165,7 @@ createRspCommand.SetHandler(async () =>
 
     Console.WriteLine($"Response file created: {responseFileName}");
 });
+
 
 
 
